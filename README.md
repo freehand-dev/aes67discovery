@@ -1,9 +1,7 @@
 AES67 Discovery Server
 ======
 
-> The administration of the IdentityServer4 and Asp.Net Core Identity
-
-
+> aes67discovery
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-brightgreen.svg)](COPYING)
 [![Build Status](https://dev.azure.com/oleksandr-nazaruk/aes67discovery/_apis/build/status/aes67discovery-CI)](https://dev.azure.com/oleksandr-nazaruk/aes67discovery/_apis/build/status/aes67discovery-CI)
@@ -20,18 +18,18 @@ To install it, you'll need to satisfy the following dependencies:
 Installing with APT can be done with a few commands. Before you install .NET, run the following commands to add the Microsoft package signing key to your list of trusted keys and add the package repository.
 Open a terminal and run the following commands:
 
-**On Ubuntu 20.04** 
+<b>On Ubuntu 20.04</b>
 
 	wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 	sudo dpkg -i packages-microsoft-prod.deb
 
-**On Ubuntu 18.04** 
+<b>On Ubuntu 18.04</b>
 
 	wget https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 	sudo dpkg -i packages-microsoft-prod.deb
 
 
-**Install the SDK**
+<b>Install the SDK</b>
 .NET Core SDK allows you to develop apps with .NET Core. If you install .NET Core SDK, you don't need to install the corresponding runtime. To install .NET Core SDK, run the following commands:
 
 	sudo apt-get update; \
@@ -39,7 +37,7 @@ Open a terminal and run the following commands:
 	sudo apt-get update && \
 	sudo apt-get install -y dotnet-sdk-3.1
 
-**Install the runtime**
+<b>Install the runtime</b>
 The .NET Core Runtime allows you to run apps that were made with .NET Core that didn't include the runtime. The commands below install the ASP.NET Core Runtime, which is the most compatible runtime for .NET Core. In your terminal, run the following commands.
 
 	sudo apt-get update; \
