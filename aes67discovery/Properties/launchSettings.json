@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Docker": {
+      "commandName": "Docker"
+    },
+    "aes67discovery": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

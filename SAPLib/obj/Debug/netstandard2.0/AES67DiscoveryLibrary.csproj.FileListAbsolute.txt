@@ -1,0 +1,8 @@
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\bin\Debug\netstandard2.0\AES67DiscoveryLibrary.deps.json
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\bin\Debug\netstandard2.0\AES67DiscoveryLibrary.dll
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\bin\Debug\netstandard2.0\AES67DiscoveryLibrary.pdb
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67DiscoveryLibrary.csprojAssemblyReference.cache
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67DiscoveryLibrary.AssemblyInfoInputs.cache
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67DiscoveryLibrary.AssemblyInfo.cs
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67DiscoveryLibrary.dll
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67DiscoveryLibrary.pdb

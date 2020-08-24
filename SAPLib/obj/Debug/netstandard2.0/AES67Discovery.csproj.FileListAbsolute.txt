@@ -1,0 +1,17 @@
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\bin\Debug\netstandard2.0\AES67Discovery.deps.json
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\bin\Debug\netstandard2.0\AES67Discovery.dll
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\bin\Debug\netstandard2.0\AES67Discovery.pdb
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.csprojAssemblyReference.cache
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.AssemblyInfoInputs.cache
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.AssemblyInfo.cs
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.dll
+C:\Users\freehand\Desktop\AES67-SAPServer\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.pdb
+C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.csprojAssemblyReference.cache
+C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.AssemblyInfoInputs.cache
+C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.AssemblyInfo.cs
+C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.csproj.CoreCompileInputs.cache
+C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.dll
+C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\AES67Discovery.pdb
+C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\bin\Debug\netstandard2.0\AES67Discovery.deps.json
+C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\bin\Debug\netstandard2.0\AES67Discovery.dll
+C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\bin\Debug\netstandard2.0\AES67Discovery.pdb

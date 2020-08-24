@@ -1,0 +1,14 @@
+﻿[Unit]
+Description=AES67 Discovery Server
+
+[Service]
+Type=notify
+WorkingDirectory=/opt/AES67DiscoveryServer/bin
+Restart=always
+RestartSec=10
+KillSignal=SIGINT
+ExecStart=/opt/AES67DiscoveryServer/bin/AES67DiscoveryServer
+Environment=ASPNETCORE_ENVIRONMENT=Production 
+
+[Install]
+WantedBy=multi-user.target
