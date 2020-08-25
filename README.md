@@ -7,6 +7,8 @@ AES67 Discovery Server
 [![Build Status](https://dev.azure.com/oleksandr-nazaruk/aes67discovery/_apis/build/status/aes67discovery-CI)](https://dev.azure.com/oleksandr-nazaruk/aes67discovery/_apis/build/status/aes67discovery-CI)
 
 
+AES67Discovery application help produce SAP announcements for discovery AES67 audio streams.
+
 The application is written in the **.Net Core - using .NET Core 3.1**
 
 
@@ -106,6 +108,28 @@ The content of the file will be the following one
 	[Logging:LogLevel]
 	Default=Information
 	Microsoft=Warning
+
+## Usage
+
+Create SDP file for stream
+
+   	v=0
+	o=- 1 0 IN IP4 10.10.32.2
+	s=AES67Discovery - AudioTest
+	i=2 channels: R, L
+	c=IN IP4 239.69.45.100/32
+	t=0 0
+	a=recvonly
+	m=audio 5004 RTP/AVP 97
+	a=rtpmap:97 L24/48000/2
+	a=ptime:1
+	a=ts-refclk:ptp=IEEE1588-2008:00-1D-C1-FF-FE-0E-49-64:0
+	a=mediaclk:direct=0
+
+
+Run audio stream
+
+	gst-launch-1.0 -v audiotestsrc ! queue ! audioresample ! audio/x-raw,channels=2,rate=48000 ! rtpL24pay pt=97 ! udpsink host=239.69.45.100 port=5004 auto-multicast=true multicast-iface=eno2
 
 
 Developed by [Oleksandr Nazaruk](https://github.com/freehand-dev)
