@@ -129,7 +129,7 @@ Create SDP file for stream
 
 Run audio stream
 
-	sudo gst-launch-1.0 -vvv --gst-debug=*udp*:5 -e audiotestsrc ! queue ! audioconvert ! audioresample ! audio/x-raw,channels=2,rate=48000,encoding-name=L24 ! rtpL24pay pt=97 mtu=1164 ! udpsink host=239.69.45.100 port=5004 auto-multicast=true multicast-iface=eno2 force-ipv4=true ttl=1
+	sudo gst-launch-1.0 -vvv --gst-debug=*udp*:5 -e audiotestsrc ! queue ! audioconvert ! audioresample ! audio/x-raw,channels=2,rate=48000,encoding-name=L24 ! rtpL24pay pt=97 mtu=300 ! udpsink host=239.69.45.100 port=5004 auto-multicast=true multicast-iface=eno2 force-ipv4=true ttl=32
 
 
 Developed by [Oleksandr Nazaruk](https://github.com/freehand-dev)
