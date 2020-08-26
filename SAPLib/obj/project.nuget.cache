@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GpAiylF/epAnQX0/20kajq5zecnQjQlt2TWBpxbcDBADavR1GY/ZSdJ6BS/z/aimMMOuehnV8xokh5IGdJkBZQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mail\\Desktop\\aes67discovery\\SAPLib\\SAPLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mail\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\mail\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
