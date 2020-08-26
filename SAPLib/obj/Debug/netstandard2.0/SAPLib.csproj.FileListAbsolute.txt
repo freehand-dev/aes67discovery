@@ -6,3 +6,12 @@ C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\SAP
 C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\SAPLib.csproj.CoreCompileInputs.cache
 C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\SAPLib.dll
 C:\Users\mail\Desktop\AES67Discovery\AES67Discovery\obj\Debug\netstandard2.0\SAPLib.pdb
+C:\Users\mail\Desktop\aes67discovery\SAPLib\bin\Debug\netstandard2.0\SAPLib.deps.json
+C:\Users\mail\Desktop\aes67discovery\SAPLib\bin\Debug\netstandard2.0\SAPLib.dll
+C:\Users\mail\Desktop\aes67discovery\SAPLib\bin\Debug\netstandard2.0\SAPLib.pdb
+C:\Users\mail\Desktop\aes67discovery\SAPLib\obj\Debug\netstandard2.0\SAPLib.csprojAssemblyReference.cache
+C:\Users\mail\Desktop\aes67discovery\SAPLib\obj\Debug\netstandard2.0\SAPLib.AssemblyInfoInputs.cache
+C:\Users\mail\Desktop\aes67discovery\SAPLib\obj\Debug\netstandard2.0\SAPLib.AssemblyInfo.cs
+C:\Users\mail\Desktop\aes67discovery\SAPLib\obj\Debug\netstandard2.0\SAPLib.csproj.CoreCompileInputs.cache
+C:\Users\mail\Desktop\aes67discovery\SAPLib\obj\Debug\netstandard2.0\SAPLib.dll
+C:\Users\mail\Desktop\aes67discovery\SAPLib\obj\Debug\netstandard2.0\SAPLib.pdb

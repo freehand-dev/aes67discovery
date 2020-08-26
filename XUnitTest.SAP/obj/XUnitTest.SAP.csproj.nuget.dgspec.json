@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mail\\Desktop\\AES67Discovery\\XUnitTest.SAP\\XUnitTest.SAP.csproj": {}
+    "C:\\Users\\mail\\Desktop\\aes67discovery\\XUnitTest.SAP\\XUnitTest.SAP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mail\\Desktop\\AES67Discovery\\SAPLib\\SAPLib.csproj": {
+    "C:\\Users\\mail\\Desktop\\aes67discovery\\SAPLib\\SAPLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mail\\Desktop\\AES67Discovery\\SAPLib\\SAPLib.csproj",
+        "projectUniqueName": "C:\\Users\\mail\\Desktop\\aes67discovery\\SAPLib\\SAPLib.csproj",
         "projectName": "SAPLib",
-        "projectPath": "C:\\Users\\mail\\Desktop\\AES67Discovery\\SAPLib\\SAPLib.csproj",
+        "projectPath": "C:\\Users\\mail\\Desktop\\aes67discovery\\SAPLib\\SAPLib.csproj",
         "packagesPath": "C:\\Users\\mail\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mail\\Desktop\\AES67Discovery\\SAPLib\\obj\\",
+        "outputPath": "C:\\Users\\mail\\Desktop\\aes67discovery\\SAPLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\Users\\mail\\Desktop\\AES67Discovery\\XUnitTest.SAP\\XUnitTest.SAP.csproj": {
+    "C:\\Users\\mail\\Desktop\\aes67discovery\\XUnitTest.SAP\\XUnitTest.SAP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mail\\Desktop\\AES67Discovery\\XUnitTest.SAP\\XUnitTest.SAP.csproj",
+        "projectUniqueName": "C:\\Users\\mail\\Desktop\\aes67discovery\\XUnitTest.SAP\\XUnitTest.SAP.csproj",
         "projectName": "XUnitTest.SAP",
-        "projectPath": "C:\\Users\\mail\\Desktop\\AES67Discovery\\XUnitTest.SAP\\XUnitTest.SAP.csproj",
+        "projectPath": "C:\\Users\\mail\\Desktop\\aes67discovery\\XUnitTest.SAP\\XUnitTest.SAP.csproj",
         "packagesPath": "C:\\Users\\mail\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mail\\Desktop\\AES67Discovery\\XUnitTest.SAP\\obj\\",
+        "outputPath": "C:\\Users\\mail\\Desktop\\aes67discovery\\XUnitTest.SAP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -90,8 +90,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\mail\\Desktop\\AES67Discovery\\SAPLib\\SAPLib.csproj": {
-                "projectPath": "C:\\Users\\mail\\Desktop\\AES67Discovery\\SAPLib\\SAPLib.csproj"
+              "C:\\Users\\mail\\Desktop\\aes67discovery\\SAPLib\\SAPLib.csproj": {
+                "projectPath": "C:\\Users\\mail\\Desktop\\aes67discovery\\SAPLib\\SAPLib.csproj"
               }
             }
           }

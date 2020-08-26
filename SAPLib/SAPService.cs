@@ -46,7 +46,6 @@ namespace SAPLib
             this._udpClient.Client.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.MulticastTimeToLive, 255);
             this.Interval = TimeSpan.FromSeconds(5);
             this._timer.AutoReset = true;
-            this._timer.Enabled = true;
             this._timer.Elapsed += OnTimedEvent;
         }
 
@@ -67,12 +66,42 @@ namespace SAPLib
 
         public void Start()
         {
+            // first init
+            foreach (KeyValuePair<string, SapPacket> item in this.Program)
+            {
+                byte[] buffer = item.Value.ToBytes();
+                _udpClient.SendAsync(buffer, buffer.Length, new IPEndPoint(this.Address, this.Port));
+
+                OnMessageSend?.Invoke(this,
+                    new MessageSendEventArgs()
+                    {
+                        Packet = item.Value
+                    });
+            }
+
+            // start timer
             _timer.Start();
         }
 
         public void Stop()
         {
+            // stop timer
             _timer.Stop();
+
+            // Send SAP Deletion packet
+            foreach (KeyValuePair<string, SapPacket> item in this.Program)
+            {
+                SapPacket sap = (SapPacket)item.Value.Clone();
+                sap.MessageType = MessageType.Deletion;
+                byte[] buffer = sap.ToBytes();
+                _udpClient.SendAsync(buffer, buffer.Length, new IPEndPoint(this.Address, this.Port));
+
+                OnMessageSend?.Invoke(this,
+                    new MessageSendEventArgs()
+                    {
+                        Packet = sap
+                    });
+            }
         }
 
         /// <summary>

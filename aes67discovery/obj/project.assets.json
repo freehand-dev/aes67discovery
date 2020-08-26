@@ -1258,11 +1258,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mail\\Desktop\\AES67Discovery\\aes67discovery\\aes67discovery.csproj",
+      "projectUniqueName": "C:\\Users\\mail\\Desktop\\aes67discovery\\aes67discovery\\aes67discovery.csproj",
       "projectName": "aes67discovery",
-      "projectPath": "C:\\Users\\mail\\Desktop\\AES67Discovery\\aes67discovery\\aes67discovery.csproj",
+      "projectPath": "C:\\Users\\mail\\Desktop\\aes67discovery\\aes67discovery\\aes67discovery.csproj",
       "packagesPath": "C:\\Users\\mail\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mail\\Desktop\\AES67Discovery\\aes67discovery\\obj\\",
+      "outputPath": "C:\\Users\\mail\\Desktop\\aes67discovery\\aes67discovery\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -1282,8 +1282,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\mail\\Desktop\\AES67Discovery\\SAPLib\\SAPLib.csproj": {
-              "projectPath": "C:\\Users\\mail\\Desktop\\AES67Discovery\\SAPLib\\SAPLib.csproj"
+            "C:\\Users\\mail\\Desktop\\aes67discovery\\SAPLib\\SAPLib.csproj": {
+              "projectPath": "C:\\Users\\mail\\Desktop\\aes67discovery\\SAPLib\\SAPLib.csproj"
             }
           }
         }

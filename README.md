@@ -114,7 +114,7 @@ The content of the file will be the following one
 Create SDP file for stream
 
    	v=0
-	o=- 1 0 IN IP4 10.10.32.2
+	o=- 1 0 IN IP4 10.10.32.45
 	s=AES67Discovery - AudioTest
 	i=2 channels: R, L
 	c=IN IP4 239.69.45.100/32
@@ -129,7 +129,7 @@ Create SDP file for stream
 
 Run audio stream
 
-	gst-launch-1.0 -v audiotestsrc ! queue ! audioresample ! audio/x-raw,channels=2,rate=48000 ! rtpL24pay pt=97 ! udpsink host=239.69.45.100 port=5004 auto-multicast=true multicast-iface=eno2
+	sudo gst-launch-1.0 -vvv --gst-debug=*udp*:5 -e audiotestsrc ! queue ! audioconvert ! audioresample ! audio/x-raw,channels=2,rate=48000,encoding-name=L24 ! rtpL24pay pt=97 mtu=1164 ! udpsink host=239.69.45.100 port=5004 auto-multicast=true multicast-iface=eno2 force-ipv4=true ttl=1
 
 
 Developed by [Oleksandr Nazaruk](https://github.com/freehand-dev)

@@ -9,7 +9,7 @@ namespace SAPLib
     public enum AuthType
     {
         PGP = 0x00,
-        CMS = 0x1,
+        CMS = 0x01,
     }
 
     public enum AuthVersion

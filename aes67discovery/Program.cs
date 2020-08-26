@@ -32,13 +32,14 @@ namespace aes67discovery
                     if (Environment.OSVersion.Platform == PlatformID.Win32NT)
                     {
                         workingDirectory = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData), "FreeHand", env.ApplicationName);
-                        config.SetBasePath(workingDirectory);
                     }
                     else if (Environment.OSVersion.Platform == PlatformID.Unix)
                     {
                         workingDirectory = System.IO.Path.Combine($"/opt/", env.ApplicationName, "etc", env.ApplicationName);
-                        config.SetBasePath(workingDirectory);
                     }
+                    if (!System.IO.Directory.Exists(workingDirectory))
+                        System.IO.Directory.CreateDirectory(workingDirectory);
+                    config.SetBasePath(workingDirectory);
 
                     //
                     Console.WriteLine($"$Env:EnvironmentName={ env.EnvironmentName }");

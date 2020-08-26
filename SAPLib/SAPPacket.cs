@@ -46,7 +46,7 @@ namespace SAPLib
 
     
 
-    public class SapPacket : IEnumerable<byte>
+    public class SapPacket : IEnumerable<byte>, ICloneable
     {
         readonly string mimeType = "application/sdp";
 
@@ -218,6 +218,59 @@ namespace SAPLib
             this.Payload = new StringBuilder();
         }
 
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public SapPacket(byte[] data)
+        {
+            int place = 0;
+
+            // Flag
+            this.Flag = Buffer.GetByte(data, place);
+            place++;
+
+            // AuthLength (1byte)
+            this.AuthenticationLength = Buffer.GetByte(data, place);
+            place++;
+
+            // MessageIdentifierHash (2byte)
+            this.MessageIdentifierHash = BitConverter.ToUInt16(data, place);
+            place += 2;
+
+            // OriginatingSource (4byte) or (16byte)
+            byte[] address = new byte[(this.AdressType == AdressType.IPv4) ? 4 : 8];
+            Buffer.BlockCopy(data, place, address, 0, address.Length);
+            this.OriginatingSource = new IPAddress(address);
+            place += address.Length;
+
+            // AuthenticationData
+            if (this.AuthenticationLength > 0)
+            {
+                this.AuthenticationData = new Authenticationte();
+                this.AuthenticationData.Flag = data[place];
+                place ++;
+
+                this.AuthenticationData.SpecificSubheader = new byte[this.AuthenticationLength - 1];
+                Buffer.BlockCopy(data, place, this.AuthenticationData.SpecificSubheader, 0, this.AuthenticationData.SpecificSubheader.Length);
+                place += this.AuthenticationData.SpecificSubheader.Length;
+            }
+
+            // PayloadType (string) + 0x00;
+            int payloadTypeCount = Array.IndexOf<byte>(data, 0x00, place) - place;
+            this.PayloadType = Encoding.UTF8.GetString(data, place, payloadTypeCount);
+            place += payloadTypeCount + 1;
+
+            // Payload (dynamic)
+            int payloadLength = data.Length - place;
+            this.Payload = new StringBuilder(
+                Encoding.UTF8.GetString(data, place, payloadLength));
+            place += payloadLength;
+
+        }
+
         /// <summary>
         /// Attach SDP text
         /// </summary>
@@ -320,7 +373,7 @@ namespace SAPLib
             // PayloadType (string) + 0x00;
             if (this.PayloadType.Length > 0)
             {
-                Buffer.BlockCopy(Encoding.ASCII.GetBytes(this.PayloadType), 0, buffer, place, this.PayloadType.Length);
+                Buffer.BlockCopy(Encoding.UTF8.GetBytes(this.PayloadType), 0, buffer, place, this.PayloadType.Length);
                 place += this.PayloadType.Length;
                 Buffer.SetByte(buffer, place, 0x00);
                 place++;
@@ -329,7 +382,7 @@ namespace SAPLib
             // Payload (dynamic)
             if (this.Payload != null)
             {
-                var payload = Encoding.ASCII.GetBytes(this.Payload.ToString());
+                var payload = Encoding.UTF8.GetBytes(this.Payload.ToString());
                 Buffer.BlockCopy(payload, 0, buffer, place, payload.Length);
                 place += payload.Length;
             }
@@ -360,6 +413,11 @@ namespace SAPLib
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        public object Clone()
+        {
+            return new SapPacket(this.ToBytes());
         }
 
         #endregion
